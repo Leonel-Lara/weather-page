@@ -27,6 +27,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background-color: #ffff;
+  overflow-x: hidden;
 }
 
 h1,
@@ -63,4 +64,18 @@ img {
   font-family: 'fontBold';
   src: url('/fonts/Lato-Bold.ttf');
   font-display: swap;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #111;
+  outline: 1px solid slategrey;
 }
